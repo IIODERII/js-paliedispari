@@ -21,3 +21,7 @@ function messageReset(myEl){
 function isBetween1and5(number){
     return (number >= 1 && number <= 5) ? true : false;
 }
+
+function isEven(num) {
+    return (num % 2 === 0) ? true : false;
+}
