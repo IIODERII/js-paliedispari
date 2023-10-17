@@ -1,11 +1,11 @@
 const paliBtn = document.getElementById('palBtn');
-const dispBtn = document.getElementById('dispBtn');
 
 paliBtn.addEventListener('click', function(){
     const userWord = document.getElementById('word').value;
     const msg = document.querySelector('#pali-side .alert');
 
-    msg.className = 'alert d-none p-4 fw-bold mt-3';
+    messageReset(msg);
+
     if(isPalindroma(userWord)){
         msg.classList.add('bg-success');
         msg.innerHTML = '&check; Sì ' + userWord +' è una parola palindroma!!'
@@ -15,4 +15,14 @@ paliBtn.addEventListener('click', function(){
     }
     msg.classList.remove('d-none')
     
+})
+
+const dispBtn = document.getElementById('dispBtn');
+
+dispBtn.addEventListener('click', function(){
+    const userNumber = document.getElementById('numb').value;
+    const msg = document.querySelector('#odd-even-side .alert');
+
+    console.log(userNumber);
+    console.log(isBetween1and5(userNumber));
 })

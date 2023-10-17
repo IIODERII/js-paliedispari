@@ -19,7 +19,7 @@
             <div class="alert d-none p-4 fw-bold mt-3"></div>
         </div>
 
-        <div class="h-100 w-50 bg-warning-subtle p-3">
+        <div class="h-100 w-50 bg-warning-subtle p-3" id="odd-even-side">
             <h2 class="fs-1 py-4">Pari e Dispari</h2>
             <p class="fw-bold">Prima di tutto scegli pari o dispari:</p>
             
@@ -29,14 +29,14 @@
                 <span id="dispari">Dispari</span>
             </div>
 
-            <label for="numb" class="py-4 fw-bold">Ora inserisci il tuo numero</label>
+            <label for="numb" class="py-4 fw-bold">Ora inserisci il tuo numero (da 1 a 5)</label>
             <input type="number" min ="1" max="5" class="form-control w-50" id="numb" name="numb" value="">
             
             <p class="py-2">Ora faremo scegliere un numero casuale al computer e lo sommeremo al tuo, se il risultato corrisponde alla tua scelta hai vinto, altrimenti... Riprova!</p>
 
             <button class="btn btn-danger mt-3" id="dispBtn">Gioca</button>
 
-            <div class="alert d-none p-4"></div>
+            <div class="alert d-none p-4 fw-bold mt-3"></div>
         </div>
     </div>
     <script src="js/utility.js"></script>
