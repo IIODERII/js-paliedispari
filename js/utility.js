@@ -15,7 +15,7 @@ function reversedWord(parola) {
 }
 
 function messageReset(myEl){
-    myEl.className = 'alert d-none p-4 fw-bold mt-3';
+    myEl.className = 'alert d-none p-4 fw-bold mt-3 text-center';
 }
 
 function isBetween1and5(number){

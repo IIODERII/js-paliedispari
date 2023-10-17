@@ -23,6 +23,14 @@ dispBtn.addEventListener('click', function(){
     const userNumber = document.getElementById('numb').value;
     const msg = document.querySelector('#odd-even-side .alert');
 
-    console.log(userNumber);
-    console.log(isBetween1and5(userNumber));
+    messageReset(msg);
+
+    if(isBetween1and5(userNumber)){
+        
+    }else{
+        msg.classList.add('bg-danger')
+        msg.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> '+ userNumber + ' non è compreso tra 1 e 5 <i class="fa-solid fa-triangle-exclamation"></i>'
+    }
+
+    msg.classList.remove('d-none')
 })
